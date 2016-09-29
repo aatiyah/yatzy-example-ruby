@@ -33,63 +33,38 @@ class Yatzy
 
   def self.ones( d1,  d2,  d3,  d4,  d5)
     sum = 0
-    if (d1 == 1)
-      sum += 1
-    end
-    if (d2 == 1)
-      sum += 1
-    end
-    if (d3 == 1)
-      sum += 1
-    end
-    if (d4 == 1)
-      sum += 1
-    end
-    if (d5 == 1)
-      sum += 1
-    end
+    dice = [d1, d2, d3, d4, d5]
 
+    dice.each do |d|
+      if d == 1
+        sum += 1
+      end
+    end
     sum
   end
 
   def self.twos( d1,  d2,  d3,  d4,  d5)
     sum = 0
-    if (d1 == 2)
-      sum += 2
+    dice = [d1, d2, d3, d4, d5]
+
+    dice.each do |d|
+      if d == 2
+        sum += 2
+      end
     end
-    if (d2 == 2)
-      sum += 2
-    end
-    if (d3 == 2)
-      sum += 2
-    end
-    if (d4 == 2)
-      sum += 2
-    end
-    if (d5 == 2)
-      sum += 2
-    end
-    return sum
+    sum
   end
 
   def self.threes( d1,  d2,  d3,  d4,  d5)
-    s = 0
-    if (d1 == 3)
-      s += 3
+    sum = 0
+    dice = [d1, d2, d3, d4, d5]
+
+    dice.each do |d|
+      if d == 3
+        sum += 3
+      end
     end
-    if (d2 == 3)
-      s += 3
-    end
-    if (d3 == 3)
-      s += 3
-    end
-    if (d4 == 3)
-      s += 3
-    end
-    if (d5 == 3)
-      s += 3
-    end
-    return s
+    sum
   end
 
   def fours
