@@ -69,32 +69,34 @@ class Yatzy
 
   def fours
     sum = 0
-    for at in Array 0..4
-      if (@dice[at] == 4)
+
+    @dice.each do |d|
+      if d == 4
         sum += 4
       end
     end
-    return sum
+    sum
   end
 
   def fives()
-    s = 0
-    i = 0
-    for i in (Range.new(0, @dice.size))
-      if (@dice[i] == 5)
-        s = s + 5
+    sum = 0
+
+    @dice.each do |d|
+      if d == 5
+        sum += 5
       end
     end
-    s
+    sum
   end
 
   def sixes
     sum = 0
-    for at in 0..@dice.length
-      if (@dice[at] == 6)
-        sum = sum + 6
+
+    @dice.each do |d|
+      if d == 6
+        sum += 6
       end
     end
-    return sum
+    sum
   end
 end
