@@ -1,3 +1,6 @@
+##Ruby exercise to refactor existing Yatzy game example. 
+I do not own the original code, I'm only refactoring the exisiting version.
+
 ##Yatzy
 
 Yatzy is a game involving five die where each player rolls the dice, aiming to score the highest possible score across a series of different hands. The first part of this exercise involves a scoring component that can accept the value of each die for a given roll and returns a potential score for whichever hand you aim to score against. If the roll does not match an available hand the scoring component should return a zero for that hand (for example, you are attempting to score a Yatzy hand but end up with a distribution of `3, 3, 5, 5, 1`)
